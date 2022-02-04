@@ -1,0 +1,133 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Telemedicina USAC</title>	
+<link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+	<br>
+	<table align="center">
+		<tr>
+			<td>
+				<a href="https://www.usac.edu.gt/" target="_blank"><img class="escudousac" src="escudousac.png" width="100px" height="100px"></a>
+			</td>
+			<td><img src="espacio.PNG"></td>
+			<td><br>
+				<img class="zoom" src="0002.png" >
+			</td>
+			<td><img src="espacio.PNG"></td>
+			<td>
+				<a href="https://portal.ingenieria.usac.edu.gt/" target="_blank"><img class="escudofiusac" src="FIUSAC.png" width="100px" height="100px"></a>
+			</td>
+		</tr>
+	</table>
+	<div class="tabla" >
+		 <h1>
+			 <p style = "font-family: candara">
+				<b>Ingrese los datos que a continuación se le solicitan</b>
+			</p> 
+			 		<!--INICIO DE FORMULARIO-->
+			 
+			 <div class="formulario">
+				<form action="guardar.php" method="POST">	
+					<font size="+2" face="arial" color="#005C6B"><label for="nombre">Nombres</label><br></font>		
+					<input class="estilodecajas" style="height: 40px" type="text" name="nombre" placeholder="Ingrese todos sus nombres" required size="50"><br><br>
+					
+					<font size="+2" face="arial" color="#005C6B"><label for="apellido">Apellidos</label><br></font>		
+					<input class="estilodecajas" style="height: 40px" type="text" name="apellido" placeholder="Ingrese todos sus Apellidos" required size="50"><br><br>
+					
+					<font size="+2" face="arial" color="#005C6B"><label for="Edad">Edad</label></font>		
+					<input class="estilodecajas" style="height: 40px" type="number" min="0" step="1" max="110" name="edad" placeholder="Edad" required size="30"><br><br>
+					
+					<font size="+2" face="arial" color="#005C6B"><label for="email">Correo Electronico</label><br></font>
+					<input class="estilodecajas" style="height: 40px" type="email" name="email" placeholder="ejemplo@email.com" required  size="50"><br><br>
+					
+					<input class="botonenviar" type="submit" value="Enviar">
+					<input class="botonlimpiar" type="reset" value="Limpiar">
+					
+				</form>		
+			</div>	 			
+		</h1>
+	</div>	
+</body>
+</html>
+
+
+CSS
+
+@charset "utf-8";
+body 
+{
+
+	box-sizing: border-box;
+	background-image: url("0001.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+	background-position: center;
+}
+
+.escudousac{
+	transition: transform 0.8s;
+}
+.escudousac:hover{
+	transform: scale(1.6);	
+}
+
+.zoom{
+	transition: transform 1s;
+}
+.zoom:hover{
+	transform: scale(1.1);	
+}
+
+.escudofiusac{
+	transition: transform 0.8s;
+}
+.escudofiusac:hover{
+	transform: scale(1.6);	
+}
+
+.tabla{
+	display:flex;
+  	justify-content: center;
+	margin: 30px 0px 30px 0px;  
+	padding: 10px;
+	background: rgba(255,255,255,0.50);
+}
+
+.estilodecajas{
+	font-size: 70%;
+	font-family: "alexa-std";
+}
+
+.botonenviar{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+  }
+  .botonenviar:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
+
+.botonlimpiar{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+  }
+  .botonlimpiar:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
+
